@@ -30,5 +30,9 @@ public class UserInput {
         String fullName = input.nextLine();
         System.out.println(fullName);
 
+      System.out.println("Print age again just for gitrepo");
+      int newAge = input.nextInt();
+      System.out.println(newAge);
+
     }
 }
