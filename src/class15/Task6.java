@@ -21,7 +21,8 @@ public class Task6 {
 
     public static void main(String[] args) {
         Task6 task6 = new Task6();
-        System.out.println(task6.isPrime(5));
+        System.out.println(task6.isPrime(10));
+
     }
     }
 
