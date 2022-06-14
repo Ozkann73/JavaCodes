@@ -18,7 +18,7 @@ public class UserInput {
         double price = input.nextDouble();
         System.out.println(price);
 
-        System.out.println("Please ente boolean");
+        System.out.println("Please enter boolean");
         boolean boo = input.nextBoolean();
         System.out.println(boo);
 
@@ -30,7 +30,7 @@ public class UserInput {
         String fullName = input.nextLine();
         System.out.println(fullName);
 
-      System.out.println("Print age again just for gitrepo");
+
       int newAge = input.nextInt();
       System.out.println(newAge);
 
