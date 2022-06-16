@@ -7,12 +7,12 @@ public class Laptop {
     String memory;
     double screenSize;
 
+    public Laptop (){
+        System.out.println("Basic construction is happening");
+    }
 
-    public Laptop(String make, String model, String storage) {
-        /*this.make = make;
-        this.model = model;
-        this.storage = storage;*/
-        this(make, model);
+    public Laptop(String make) {
+        this.make = make;
     }
 
     public Laptop(String make, String model) {
@@ -20,23 +20,35 @@ public class Laptop {
         this.model = model;
     }
 
-    public Laptop(String make) {
+    public Laptop(String make, String model, String storage) {
         this.make = make;
+        this.model = model;
+        this.storage = storage;
     }
+
+    public Laptop(String make, String model, String storage, String memory) {
+       /* this.make = make;
+        this.model = model;
+        this.storage = storage;*/
+        this(make,model,storage);
+        this.memory = memory;
+    }
+
     public Laptop(String make, String model, String storage, String memory, double screenSize) {
-      /*  this.make = make;
+       /* this.make = make;
         this.model = model;
         this.storage = storage;
         this.memory = memory;*/
-        this(make, model, storage);
-        this.screenSize = screenSize;}
+        this (make,model,storage,memory);
+        this.screenSize = screenSize;
+    }
+    void getInfo (){
+        System.out.println("Make "+make+" Model "+model+" Storage "+storage+" Memory "+memory);
 
-    public Laptop (){
-        System.out.println("Basic of construction is happening");
     }
 
     public static void main(String[] args) {
-        Laptop apple =new Laptop("Apple","M1Pro 14","512");
-
+        Laptop apple = new Laptop("Apple","M1Pro 14","512","14.2");
+        apple.getInfo();
     }
 }
