@@ -12,3 +12,5 @@ public class Demo5 {
         System.out.println(subjects.indexOf("Git"));
     }
 }
+
+
