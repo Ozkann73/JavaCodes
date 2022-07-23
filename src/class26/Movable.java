@@ -24,7 +24,7 @@ class Test {
         moveAble.move();
         ((Car)(moveAble)).park(); // narrowing
 
-        // with interfaces, we can also vuse polymorphism
+        // with interfaces, we can also use polymorphism
         Movable [] moveAbles = {new Car(),new Person()};
 
     }
